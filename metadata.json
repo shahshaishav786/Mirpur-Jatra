@@ -1,0 +1,6 @@
+{
+  "name": "પ્રેમ સમરથ પરિવાર - સ્નેહમિલન & જહાજ મંદિર જાત્રા",
+  "description": "પ્રેમ સમરથ પરિવાર સ્નેહમિલન & શ્રી જહાજ મંદિર (મીરપુર) જાત્રા રજીસ્ટ્રેશન પોર્ટલ. ટોકન રકમ ₹૧,૦૦૦/વ્યક્તિ ઓટો-કેલ્ક્યુલેટ અને Google Pay (GPay) પેમેન્ટ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,123 @@
+import { EventConfig, RegistrationRecord } from '../types';
+
+export const DEFAULT_EVENT_CONFIG: EventConfig = {
+  familyGroupName: 'પ્રેમ સમરથ પરિવાર',
+  eventName: 'સ્નેહમિલન & પવિત્ર યાત્રાધામ જાત્રા ૨૦૨૬',
+  pilgrimageDestination: 'શ્રી જહાજ મંદિર, મીરપુર (પાવાપુરી પાસે, રાજસ્થાન)',
+  templeSpeciality: 'અત્યંત સુંદર, પ્રાચીન અને ચમત્કારી તીર્થધામ',
+  eventDate: '2026-12-25T06:00:00',
+  eventDisplayDate: '૨૫, ૨૬ અને ૨૭ ડિસેમ્બર ૨૦૨૬ (૩ દિવસીય પ્રવાસ)',
+  travelMode: 'અમદાવાદથી લક્ઝરી AC બસ (Ahmedabad to Mirpur Luxury Coach)',
+  roomBookingNotice: 'યાત્રાધામ પર અન્ય સંઘોનું પણ બુકિંગ ચાલુ હોવાથી, આપણે રૂમોનું કન્ફર્મેશન આગામી બુધવાર સુધીમાં આપવું અનિવાર્ય છે. ગત વખતે મોડું થવાથી આપણે સારું સ્થળ ગુમાવવું પડ્યું હતું, તેથી સમયસર નોંધણી કરાવવી જરૂરી છે.',
+  ratePerPax: 1000, // Token amount: ₹ 1,000/- (વ્યક્તિ દીઠ - નોન-રિફંડેબલ)
+  estimatedCostPerPax: 3500, // અંદાજિત કુલ ખર્ચ: આશરે ₹ ૩,૫૦૦/- પ્રતિ વ્યક્તિ
+  upiId: '9978810372@ybl', // Matched directly with Hetal Dineshbhai Shah's PhonePe QR
+  payeeName: 'HETAL DINESHBHAI SHAH', // Payee as displayed on official PhonePe QR
+  contactPersons: [
+    { name: 'રાજુભાઈ શાહ', phone: '9428001127', role: 'સંયોજક' },
+    { name: 'સુરેશભાઈ', phone: '9426413878', role: 'રૂમ વ્યવસ્થા' },
+    { name: 'હેતલ શાહ', phone: '9978810372', role: 'રજીસ્ટ્રેશન & ફાઇનાન્સ (PhonePe/GPay)' },
+    { name: 'વિપુલભાઈ', phone: '9825083373', role: 'બસ & પ્રવાસ વ્યવસ્થા' },
+  ],
+  organizerPhone: '9978810372',
+  organizerEmail: 'shahshaishav786@gmail.com',
+  accountNotePrefix: 'PremSamarth-JahajMandir',
+  showItineraryToUsers: false, // Default false as requested: removed as of now, pushed by admin when ready
+};
+
+export const INITIAL_REGISTRATIONS: RegistrationRecord[] = [
+  {
+    id: 'PS-2026-101',
+    createdAt: '2026-09-26T08:30:00.000Z',
+    headName: 'રાજુભાઈ શાહ',
+    phone: '9428001127',
+    email: 'raju.shah@example.com',
+    nativePlace: 'પાટણ',
+    address: 'પાલડી, અમદાવાદ',
+    numberOfPax: 4,
+    ratePerPax: 1000,
+    tokenAmount: 4000,
+    estimatedTotalCost: 14000,
+    boardingPoint: 'પાલડી ચાર રસ્તા (Paldi Cross Roads, Ahmedabad)',
+    paymentStatus: 'confirmed',
+    paymentMethod: 'phonepe',
+    transactionId: 'UPI/428919024810/PhonePe',
+    paymentNote: 'PhonePe QR સ્કેન દ્વારા ટોકન જમા',
+    members: [
+      {
+        id: 'mem-101-1',
+        name: 'રાજુભાઈ શાહ',
+        ageCategory: 'Senior (60+)',
+        gender: 'Male',
+        relationship: 'Self (મોભી)',
+        foodPreference: 'Jain',
+        roomPreference: 'Family Room',
+      },
+      {
+        id: 'mem-101-2',
+        name: 'નીતાબેન શાહ',
+        ageCategory: 'Senior (60+)',
+        gender: 'Female',
+        relationship: 'પત્ની',
+        foodPreference: 'Jain',
+        roomPreference: 'Family Room',
+      },
+      {
+        id: 'mem-101-3',
+        name: 'ચિરાગ શાહ',
+        ageCategory: 'Adult (12+)',
+        gender: 'Male',
+        relationship: 'પુત્ર',
+        foodPreference: 'Jain',
+        roomPreference: 'Family Room',
+      },
+      {
+        id: 'mem-101-4',
+        name: 'પ્રીતિ શાહ',
+        ageCategory: 'Adult (12+)',
+        gender: 'Female',
+        relationship: 'પુત્રવધૂ',
+        foodPreference: 'Jain',
+        roomPreference: 'Family Room',
+      },
+    ],
+  },
+  {
+    id: 'PS-2026-102',
+    createdAt: '2026-09-26T10:15:00.000Z',
+    headName: 'સુરેશભાઈ શાહ',
+    phone: '9426413878',
+    email: 'suresh@example.com',
+    nativePlace: 'ઊંઝા',
+    address: 'ઇસ્કોન, અમદાવાદ',
+    numberOfPax: 2,
+    ratePerPax: 1000,
+    tokenAmount: 2000,
+    estimatedTotalCost: 7000,
+    boardingPoint: 'ઇસ્કોન ક્રોસ રોડ (ISCON Cross Road, SG Highway)',
+    paymentStatus: 'confirmed',
+    paymentMethod: 'gpay',
+    transactionId: 'UPI/783921829031/GPay',
+    paymentNote: 'GPay દ્વારા ટોકન જમા',
+    members: [
+      {
+        id: 'mem-102-1',
+        name: 'સુરેશભાઈ શાહ',
+        ageCategory: 'Senior (60+)',
+        gender: 'Male',
+        relationship: 'Self (મોભી)',
+        foodPreference: 'Jain',
+        roomPreference: 'Double Bed',
+      },
+      {
+        id: 'mem-102-2',
+        name: 'ભાવનાબેન શાહ',
+        ageCategory: 'Senior (60+)',
+        gender: 'Female',
+        relationship: 'પત્ની',
+        foodPreference: 'Jain',
+        roomPreference: 'Double Bed',
+      },
+    ],
+  },
+];
